@@ -23,8 +23,7 @@ jobs:
 
       - name: Check project files
         run: |
-          test -f project.godot
-          test -d scripts
+          test -f game/project.godot
 
       - uses: actions/setup-java@v4
         with:
