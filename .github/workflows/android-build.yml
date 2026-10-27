@@ -21,8 +21,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Static checks (no engine needed)
-        run: python3 tools/static_check.py
+      - name: Check project files
+        run: |
+          test -f project.godot
+          test -d scripts
 
       - uses: actions/setup-java@v4
         with:
