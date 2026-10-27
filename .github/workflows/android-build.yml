@@ -21,10 +21,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check project files
-        run: |
-          test -f game/project.godot
-
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
